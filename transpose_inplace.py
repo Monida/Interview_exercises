@@ -23,4 +23,14 @@ def transpose_inplace(A):
         ct+=1
         c=0
     return A
+	
+	
+#################################
+A=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+
+def transposeMatrix(A):
+	for row in range(len(A)):
+		for col in range(row, len(A)):
+			A[row][col], A[col][row] = A[col][row], A[row][col]
+	return A
 
